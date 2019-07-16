@@ -1,0 +1,845 @@
+// Dota Heroes File
+"DOTAAbilities"
+{
+	"Version"		"1"
+
+
+	//=================================================================================================================
+	// FORRAD
+	//=================================================================================================================
+	"spirit_strike"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/forrad/spirit_strike.lua"
+		"AbilityTextureName"			"spectre_desolate"
+		"MaxLevel" 						"4"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+
+		"AbilityCooldown"				"10 9 8 7"
+		"AbilityManaCost"				"50 65 80 95"
+
+		"AbilityCastRange"				"150"
+		"AbilityCastPoint"				"0.3"
+		"AbilityCastAnimation"			"ACT_DOTA_ATTACK_EVENT"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"damage"			"120"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"percent"			"11 14 17 20"
+			}
+		}
+	}
+
+	"spirit_strike_talent"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/forrad/spirit_strike_talent.lua"
+		"AbilityTextureName"			"spirit_strike_talent"
+		"MaxLevel" 						"4"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+
+		"AbilityCooldown"				"10 7 8 9"
+		"AbilityManaCost"				"50 65 80 95"
+
+		"AbilityCastRange"				"600"
+		"AbilityCastPoint"				"0.2"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_2"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"damage"			"120"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"percent"			"11 14 17 20"
+			}
+		}
+	}
+
+	"oath_of_the_spectral_blade"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/forrad/oath_of_the_spectral_blade.lua"
+		"AbilityTextureName"			"oath_of_the_spectral_blade"
+		"MaxLevel" 						"4"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityCooldown"				"100 85 70 55"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"movespeed"				"10 15 20 25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"ghost_movespeed"		"20 30 40 50"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"reduction"				"-60 -50 -40 -30"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"reduction_tooltip"		"40 50 60 70"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"5"
+			}
+		}
+	}
+
+	"oath_of_the_spectral_blade_talent"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/forrad/oath_of_the_spectral_blade_talent.lua"
+		"AbilityTextureName"			"oath_of_the_spectral_blade_talent"
+		"MaxLevel" 						"4"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+
+		"AbilityCooldown"				"100 85 70 55"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"movespeed"				"10 15 20 25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"ghost_movespeed"		"20 30 40 50"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"reduction"				"-60 -50 -40 -30"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"reduction_tooltip"		"40 50 60 70"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"5"
+			}
+		}
+	}
+
+	"wrath_of_the_betrayed"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/forrad/wrath_of_the_betrayed.lua"
+		"AbilityTextureName"			"abaddon_death_coil"
+		"MaxLevel" 						"4"
+
+		"HasScepterUpgrade"				"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+
+		"AOERadius"						"400"
+
+		"AbilityCooldown"				"25"
+		"AbilityManaCost"				"85 105 125 145"
+
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.2"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"steal"					"2 3 4 5"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"health"				"25"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aghs_radius"			"400"
+			}
+		}
+	}
+
+	"honour_of_the_dead"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/forrad/honour_of_the_dead.lua"
+		"AbilityTextureName"			"dark_seer_vacuum"
+		"MaxLevel" 						"3"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AOE "
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilityType"    				"DOTA_ABILITY_TYPE_ULTIMATE"
+
+		"AbilityCooldown"				"150"
+		"AbilityManaCost"				"120 200 280"
+		//"AbilityDamage"					"150 250 350"
+
+		"AbilityCastRange"				"450"
+		"AOERadius" 					"450"
+		"AbilityCastPoint"				"0.3"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_2"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"armour"				"-5"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"15"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"agility"				"10"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"agility_bonus"			"4 6 8"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"150 250 350"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"450"
+			}
+		}
+	}
+
+	"forrad_talent_q" // Q becomes a blink
+	{
+		"BaseClass"             "special_bonus_undefined"							
+		"AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+
+	"forrad_talent_r" // R slows
+	{
+		"BaseClass"             "special_bonus_undefined"							
+		"AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+		    "01"
+		    {
+		        "var_type"          "FIELD_FLOAT"
+		        "value"             "-20"
+		    }
+		}
+	}
+
+	"forrad_talent_e" // 5% current health steal on E
+	{
+		"BaseClass"             "special_bonus_undefined"							
+		"AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+		    "01"
+		    {
+		        "var_type"          "FIELD_FLOAT"
+		        "value"             "5"
+		    }
+		}
+	}
+
+	"forrad_talent_w" // W becomes castable
+	{
+		"BaseClass"             "special_bonus_undefined"
+		"AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+
+	
+
+
+	//=================================================================================================================
+	// CRIMSON SHAMBLER
+	//=================================================================================================================
+	"voracious_spores"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/crimson_shambler/voracious_spores.lua"
+		"AbilityTextureName"			"voracious_spores"
+		"MaxLevel" 						"4"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityCooldown"				"18 16 13 10"
+		"AbilityManaCost"				"90 110 130 150"
+
+		"AOERadius"						"300 350 400 450"
+
+		"AbilityCastRange"				"600"
+		"AbilityCastPoint"				"0.2"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_2"
+
+		"AbilitySpecial"
+		{
+			"06"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"300 350 400 450"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"root_duration"		"1.5"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"damage_per_tick"	"3.75 7.5 11.25 15.0"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"damage_duration"	"3 4 5 6"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"tick_rate"			"0.25"
+			}
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"damage_tooltip"	"15 30 45 60"
+			}
+		}
+	}
+
+	"dazzling_cloud"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/crimson_shambler/dazzling_cloud.lua"
+		"AbilityTextureName"			"dazzling_cloud"
+		"MaxLevel" 						"4"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityCooldown"				"30 27 24 20"
+		"AbilityManaCost"				"125 150 175 200"
+
+		"AOERadius"						"200 225 250 275"
+
+		"AbilityCastRange"				"525 575 650 750"
+		"AbilityCastPoint"				"0.2"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"250 275 300 350"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"cloud_duration"		"5.0"
+				"LinkedSpecialBonus"	"special_bonus_unique_clockwerk_3"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"sleep_delay"		"1 0.8 0.65 0.5"
+			}
+		}
+	}
+
+	"mycosis"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/crimson_shambler/mycosis.lua"
+		"AbilityTextureName"			"mycosis"
+		"MaxLevel" 						"4"
+
+		"HasScepterUpgrade"				"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"degen"					"0.5"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"heal_reduction"		"5"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"15 20 25 30"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"sporeling_duration"	"25 27 30 35"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"sporeling_health"		"150 300 450 600"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"sporeling_speed"		"330 350 370 400"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"sporeling_damage"		"20 30 40 50"
+				"LinkedSpecialBonus"	"crimson_shambler_talent_e"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"sporeling_bat"			"1.5 1.3 1.15 1.0"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"aghs_radius"			"350"
+			}
+		}
+	}
+
+	"fetid_growth"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/crimson_shambler/fetid_growth.lua"
+		"AbilityTextureName"			"fetid_growth"
+		"MaxLevel" 						"3"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_NO_TARGET "
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityType"    				"DOTA_ABILITY_TYPE_ULTIMATE"
+
+		"AbilityCooldown"				"120 105 90"
+		"AbilityManaCost"				"150 210 300"
+
+		"AbilityCastRange"				"600 650 700"
+		"AOERadius" 					"600 650 700"
+		"AbilityCastPoint"				"0.4"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_5"	
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"health"				"300 450 600"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"slow"					"-40 -50 -60"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"5"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"600 650 700"
+			}
+		}
+	}
+
+	"crimson_shambler_talent_w" // +1.5sec Cloud Duration
+	{
+		"BaseClass"             "special_bonus_undefined"
+		"AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"value"				"1.5"
+			}
+		}
+	}
+
+	"crimson_shambler_talent_e" // +15 Sporeling Damage
+	{
+		"BaseClass"             "special_bonus_undefined"
+		"AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"value"				"15"
+			}
+		}
+	}
+
+	"crimson_shambler_talent_r" // R gives allies mycosis
+	{
+		"BaseClass"             "special_bonus_undefined"
+		"AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+
+	
+
+
+	//=================================================================================================================
+	// META MAGE
+	//=================================================================================================================
+	"eldritch_strike"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/meta_mage/eldritch_strike.lua"
+		"AbilityTextureName"			"eldritch_strike"
+		"MaxLevel" 						"4"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityCooldown"				"14 13 12 11"
+		"AbilityManaCost"				"90 100 110 120"
+		//"AbilityDamage"					"60 100 140 180"
+
+		"AbilityCastRange"				"800"
+		"AbilityCastPoint"				"0.4"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"60 100 140 180"
+				"LinkedSpecialBonus"	"meta_mage_talent_q"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bonus_damage"			"1.75 2.00 2.25 2.50"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"3.25"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"percent"				"10 15 20 25"
+			}
+		}
+	}
+
+	"meta_form"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/meta_mage/meta_form.lua"
+		"AbilityTextureName"			"meta_form"
+		"MaxLevel" 						"4"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityCastRange"				"450"
+		"AOERadius"						"450"
+		"AbilityCastPoint"				"0.3"
+		"AbilityCastAnimation"			"ACT_DOTA_OVERRIDE_ABILITY_4"
+
+		"AbilityCooldown"				"18"
+		"AbilityManaCost"				"50"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"regen"					"10 15 20 25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bonus_regen"			"0.25 0.40 0.55 0.70"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"reduction"				"20 30 40 50"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"movespeed"				"10 12 14 16"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"3.5 4.0 4.5 5.0"
+				"LinkedSpecialBonus"	"meta_mage_talent_w"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"450"
+			}
+		}
+	}
+
+	"power_void"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/meta_mage/power_void.lua"
+		"AbilityTextureName"			"power_void"
+		"MaxLevel" 						"4"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+
+		"AbilityCooldown"				"20"
+		"AbilityManaCost"				"110 125 140 155"
+
+		"AbilityCastRange"				"675"
+		"AbilityCastPoint"				"0.4"
+		"AbilityCastAnimation"			"ACT_DOTA_AW_MAGNETIC_FIELD"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"steal"					"6 9 12 15"
+				"LinkedSpecialBonus"	"meta_mage_talent_e"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_steal"			"20 19 18 17"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"45"
+			}
+		}
+	}
+
+	"power_gift"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/meta_mage/power_gift.lua"
+		"AbilityTextureName"			"power_gift"
+		"MaxLevel" 						"4"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+
+		"AbilityCooldown"				"0.5"
+		"AbilityManaCost"				"0"
+
+		"AbilityCastRange"				"675"
+		"AbilityCastPoint"				"0.4"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+	}
+
+	"spell_destruction"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/meta_mage/spell_destruction.lua"
+		"AbilityTextureName"			"spell_destruction"
+		"MaxLevel" 						"3"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN "
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+
+		"AbilityCooldown"				"70 60 50"
+		"AbilityManaCost"				"100 200 300"
+
+		"AbilityCastRange"				"900"
+		"AbilityCastPoint"				"0.4"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"abilities"				"2 3 4"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"			"0.4 0.7 1.0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"150 250 350"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"8"
+			}
+		}
+	}
+
+	"spellcraft"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/meta_mage/spellcraft.lua"
+		"AbilityTextureName"			"spellcraft"
+
+		"HasScepterUpgrade"				"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+
+		"AbilityCooldown"				"70 60 50"
+		"AbilityManaCost"				"100 200 300"
+
+		"AbilityCastRange"				"900"
+		"AbilityCastPoint"				"0.3"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"15"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_cast"			"0 1 2"
+			}
+		}
+	}
+
+	"meta_mage_talent_w" // +2sec Meta Form Duration
+	{
+		"BaseClass"             "special_bonus_undefined"
+		"AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"value"				"2"
+			}
+		}
+	}
+
+	"meta_mage_talent_e" // +3 Base E Steal
+	{
+		"BaseClass"             "special_bonus_undefined"
+		"AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"value"				"3"
+			}
+		}
+	}
+
+	"meta_mage_talent_q" // +150 Q damage
+	{
+		"BaseClass"             "special_bonus_undefined"
+		"AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"value"				"150"
+			}
+		}
+	}
+
+
+}

@@ -1,0 +1,11 @@
+"AddonInfo"
+{
+
+	"maps"			"playground"
+
+	"playground"
+	{
+	  "MaxPlayers"          "4"
+	}
+
+}
