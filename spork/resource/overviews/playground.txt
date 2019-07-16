@@ -1,0 +1,8 @@
+playground
+{
+	material materials/overviews/playground.vmat
+	pos_x -4075
+	pos_y 4075
+	scale 7.979
+}
+
